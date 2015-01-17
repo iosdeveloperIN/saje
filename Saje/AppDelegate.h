@@ -7,10 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ICETutorialController.h"
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate,ICETutorialControllerDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+@property (strong, nonatomic) ICETutorialController *viewController;
+@property (assign, nonatomic) BOOL flag;
 
 
 @end
